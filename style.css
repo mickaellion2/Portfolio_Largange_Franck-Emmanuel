@@ -1,0 +1,225 @@
+html{
+	  scroll-behavior: smooth;
+ 	
+}
+body{
+	font-family: Roboto;
+}
+
+header, footer{
+	display: flex;
+	flex-direction: column;
+}
+
+.menu a{
+	color: unset;
+	text-decoration: unset;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 2% 2%;
+	align-items: center;
+}
+
+main{
+	margin: 0 10%;
+}
+
+hr{
+	width: 80%;
+	height: 1px;	
+	background-color: #704796;
+	margin-top: 20px;
+}
+
+h1, h2, h3{
+	color :#704796;font-weight: 700;
+	text-align: center;
+}
+
+header div, footer div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 2%;
+	align-items: center;
+}
+
+
+header hr{
+	width: 95%;
+}
+
+ footer .logo, .parcours .logo{
+	margin: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.menu{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-end;
+	color: #704796;
+}
+
+p{
+	text-align: justify;
+}
+
+.parcours{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.parcours article{
+	/*width: 70%;*/
+}
+
+.parcours::firstchild{
+
+}
+
+.presentation div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.presentation aside{
+	border-radius: 50%;
+	overflow: hidden;
+	max-width: 25%;
+	width: -webkit-fill-available;
+    height: fit-content;
+
+}
+
+
+.presentation img{
+	width: 80%;
+	width: -webkit-fill-available;
+}
+
+.presentation article{
+	width: 67%;
+}
+
+.presentation, .parcours, .projets{
+	margin-bottom: 20%;
+}
+
+.parcours aside{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 30%;
+}
+
+.parcours aside div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.parcours aside img{
+	max-width: 200px;
+	
+}
+
+.parcours .icones{
+	max-width: 50px;
+}
+
+.parcours aside button{
+	text-decoration: underline;
+	padding: 20px;
+	background-color: #704796;
+	border-radius: 50px;
+	color: white;
+	border: #704796;
+	box-shadow: #70479650 0px 0px 4px 2px;
+	font-weight: 700;
+	width: 90%;
+	font-size: 16px;
+}
+
+.parcours h3{
+	text-align: left;
+}
+
+.logo img{
+	max-width: 100px;
+	width: 60%;
+}
+
+.parcours .taches{
+	margin-bottom : 2em;
+}
+
+.parcours .taches li {
+	font-family: Roboto Light;
+	font-style: oblique;
+	list-style-type: none;
+	
+}
+.parcours .taches ul {
+	padding-inline-start: 0px;
+    margin-block-start: 0px;
+}
+
+.parcours .dates {
+	font-family: Roboto Light;
+	color: #704796;
+}
+
+.parcours .taches li:before{
+	content: '-';
+}
+
+.projets{
+	margin-top: 10%;
+}
+.projets article{
+	display: flex;
+	flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.projets .banniere{
+	border: 1px solid black;
+	height: 200px;
+	width: 70%;
+}
+
+
+.projets article div{
+	width: 50%;
+}
+
+.projets h1{
+	font-size: 2em;
+}
+.projets h2{
+
+	font-size: 1.5em;
+}
+
+footer .contact{
+	display: flex;
+	flex-direction: column;
+}
+
+footer .contact .icones i{
+	margin: 5%;
+}
+
+footer .contact .icones{
+	width: 100%;
+}

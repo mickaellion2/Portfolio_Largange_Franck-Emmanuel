@@ -223,3 +223,22 @@ footer .contact .icones i{
 footer .contact .icones{
 	width: 100%;
 }
+
+@media (max-width: 769px){
+	.presentation div{
+		flex-direction: column-reverse;
+		margin-top: 50px;
+	}
+
+	.presentation article {
+		width: 100%;
+	}
+
+	.parcours .icones{
+		    margin-block: 20%;
+	}
+
+	.parcours aside button{
+		width: auto;
+	}
+}

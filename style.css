@@ -1,6 +1,5 @@
 html{
-	  scroll-behavior: smooth;
- 	
+	scroll-behavior: smooth;
 }
 body{
 	font-family: Roboto;
@@ -11,8 +10,9 @@ header, footer{
 	flex-direction: column;
 }
 
-.menu a{
+.menu a, .projets a{
 	color: unset;
+	color: #704796;
 	text-decoration: unset;
 	display: flex;
 	flex-direction: row;
@@ -21,12 +21,26 @@ header, footer{
 	align-items: center;
 }
 
+footer a{
+	color: black;
+}
+
+ul li{
+	margin: 0 0 10px 0;
+
+}
+
+ul{
+	padding-inline-start: inherit;
+	list-style: inside;
+}
+
 main{
 	margin: 0 10%;
 }
 
 hr{
-	width: 80%;
+	width: 95%;
 	height: 1px;	
 	background-color: #704796;
 	margin-top: 20px;
@@ -35,12 +49,22 @@ hr{
 h1, h2, h3{
 	color :#704796;font-weight: 700;
 	text-align: center;
+	padding-top: 1em;
+}
+h1{
+	font-size: 5em;
+
+}
+
+h2{
+	font-size: 3em;
+
 }
 
 header div, footer div{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 0 2%;
 	align-items: center;
 }
@@ -50,10 +74,10 @@ header hr{
 	width: 95%;
 }
 
- footer .logo, .parcours .logo{
+footer .logo, .parcours .logo{
 	margin: 0;
-    border-radius: 50%;
-    overflow: hidden;
+	border-radius: 50%;
+	overflow: hidden;
 }
 
 .menu{
@@ -94,7 +118,7 @@ p{
 	overflow: hidden;
 	max-width: 25%;
 	width: -webkit-fill-available;
-    height: fit-content;
+	height: fit-content;
 
 }
 
@@ -110,6 +134,7 @@ p{
 
 .presentation, .parcours, .projets{
 	margin-bottom: 20%;
+	margin-top: 5%;
 }
 
 .parcours aside{
@@ -168,7 +193,7 @@ p{
 }
 .parcours .taches ul {
 	padding-inline-start: 0px;
-    margin-block-start: 0px;
+	margin-block-start: 0px;
 }
 
 .parcours .dates {
@@ -181,21 +206,26 @@ p{
 }
 
 .projets{
-	margin-top: 10%;
+	margin-top: 0;
+	padding-top: 5%;
 }
 .projets article{
 	display: flex;
 	flex-direction: column;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 10%;
-    margin-top: 5%;
+	align-content: center;
+	align-items: center;
+	margin-bottom: 10%;
+	padding-top: 5%;
 }
 
 .projets .banniere{
-	border: 1px solid black;
-	height: 200px;
-	width: 70%;
+/*	height: 200px;*/
+width: 70%;
+}
+
+.projets .banniere img{
+/*	height: 200px;*/
+width: 100%;
 }
 
 
@@ -211,6 +241,11 @@ p{
 	font-size: 1.5em;
 }
 
+#projets{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
 footer .contact{
 	display: flex;
 	flex-direction: column;
@@ -224,6 +259,8 @@ footer .contact .icones{
 	width: 100%;
 }
 
+
+
 @media (max-width: 769px){
 	.presentation div{
 		flex-direction: column-reverse;
@@ -235,10 +272,20 @@ footer .contact .icones{
 	}
 
 	.parcours .icones{
-		    margin-block: 20%;
+		margin-block: 20%;
 	}
 
 	.parcours aside button{
 		width: auto;
 	}
+}
+
+.icone-tri {
+	font-size: 0.8em;
+	margin-left: 5px;
+	visibility: hidden;
+}
+
+th.active .icone-tri {
+	visibility: visible;
 }

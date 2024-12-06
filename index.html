@@ -10,19 +10,18 @@
 <body>
 	<header>
 		<div>
-			
 			<div class="logo">
-				<a href=""><img src="sigle.jpg"></a>
+				<a href="index.html"><img src="sigle.jpg"></a>
 			</div>
 			<nav class="menu">
 				<a href="#parcours">Qui suis-je ?</a>
-				<a href="#projets">Projets ?</a>
+				<a href="#projets">Projets</a>
 			</nav>
 		</div>
 		<hr></hr>
 	</header>
 	<main>
-		<section class="presentation">
+		<section id="presentation" class="presentation">
 			<div>
 			<article>
 				<h1 style="font-size: 2em;">Franck-Emmanuel LARGANGE</h1>
@@ -44,7 +43,8 @@
 
 					<img src="photo.jpg">
 				</div>
-				<button>Télécharger CV</button>
+				<button type="submit" onclick="window.open('CV_Octobre2024.pdf')">Télécharger CV</button>
+
 				<h3>Compétences</h3>
 				<div>
 					<img class="icones" src="img/html-5.png">
@@ -101,18 +101,28 @@
 				</article>
 			</main>
 		</section>
-		<section id="projets" class="projets">
 			<h1>Projets</h1>
+		<section id="projets" class="projets">
 			<article>
-				<div class="banniere"></div>
-				<h2>Projet #1</h2>
-				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ultrices justo. Donec elementum congue odio quis bibendum. Pellentesque commodo, dolor ut volutpat laoreet, erat ipsum lacinia turpis, ac tristique justo massa eu enim. Sed ac tortor nisl. Nulla sit amet malesuada justo. Etiam lacinia leo ultricies, ultricies orci eu, imperdiet metus. In mollis ligula ex, non consequat tellus efficitur ut. Vivamus sed eleifend lacus. Suspendisse ornare rutrum libero. Donec ut augue dictum, bibendum ipsum nec, sagittis erat.</div>
+				<div class="banniere">
+					<img src="img/LogoTransparent.png">
+				</div>
+				<h2>ArgoDream</h2>
+				<div><p>Bienvenue sur ArgoDream : La plateforme des livres-jeux interactifs !
+
+Découvrez ArgoDream, un espace unique dédié à la création et à la découverte des livres-jeux. Que vous soyez lecteur passionné ou auteur en herbe, notre plateforme vous offre tout ce dont vous avez besoin pour vivre et créer des aventures captivantes.</p>
+				<a href="projets.html#argodream">Lire la suite...</a>
+				</div>
 			</article>
 			<hr></hr>
 			<article>
-				<div class="banniere"></div>
-				<h2>Projet #2</h2>
-				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ultrices justo. Donec elementum congue odio quis bibendum. Pellentesque commodo, dolor ut volutpat laoreet, erat ipsum lacinia turpis, ac tristique justo massa eu enim. Sed ac tortor nisl. Nulla sit amet malesuada justo. Etiam lacinia leo ultricies, ultricies orci eu, imperdiet metus. In mollis ligula ex, non consequat tellus efficitur ut. Vivamus sed eleifend lacus. Suspendisse ornare rutrum libero. Donec ut augue dictum, bibendum ipsum nec, sagittis erat.</div>
+				<div class="banniere">
+					<h2 style="font-family: Delaney; font-weight:initial; font-size: 12vw; margin: auto	; color: black;">Calliopea</h2>
+				</div>
+				<h2>Calliopea</h2>
+				<div><p>Bienvenue sur Calliopea : L'accompagnement pour écrivains amateurs
+Vous rêvez d’écrire, de progresser et de voir vos idées prendre vie ? Calliopea est une plateforme dédiée aux écrivains amateurs, créée pour transformer votre passion en un art épanouissant et reconnu.</p>
+				<a href="projets.html#calliopea">Lire la suite...</a></div>
 			</article>
 		</section>
 	</main>
@@ -120,7 +130,7 @@
 		<hr></hr>
 		<div>
 			<div class="logo">
-				<img src="photo.jpg">
+				<a href="index.html#presentation"><img src="photo.jpg"></a>
 			</div>
 			<div class="certif">
 				<span style="color: #704796; margin-right: 0.5em;">@2024 </span> maquette portfolio
@@ -128,7 +138,7 @@
 			<div class="contact">
 				<div>CONTACT</div>
 				<div class="icones">
-					<i class="fa-brands fa-linkedin-in"></i>
+					<a href="https://www.linkedin.com/in/franck-emmanuel-largange/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 					<i class="fa-brands fa-github"></i>
 					<i class="fa-solid fa-envelope"></i>
 				</div>

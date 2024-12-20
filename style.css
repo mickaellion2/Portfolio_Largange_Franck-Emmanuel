@@ -52,7 +52,7 @@ h1, h2, h3{
 	padding-top: 1em;
 }
 h1{
-	font-size: 5em;
+	font-size: 4em;
 
 }
 
@@ -160,7 +160,6 @@ p{
 }
 
 .parcours aside button{
-	text-decoration: underline;
 	padding: 20px;
 	background-color: #704796;
 	border-radius: 50px;
@@ -168,7 +167,6 @@ p{
 	border: #704796;
 	box-shadow: #70479650 0px 0px 4px 2px;
 	font-weight: 700;
-	width: 90%;
 	font-size: 16px;
 }
 
@@ -264,7 +262,7 @@ footer .contact .icones{
 
 
 
-@media (max-width: 769px){
+@media screen and (max-width: 769px){
 	.presentation div{
 		flex-direction: column-reverse;
 		margin-top: 50px;
@@ -283,6 +281,42 @@ footer .contact .icones{
 	}
 }
 
+@media screen and (min-width: 1439px){
+	body{
+		font-size: 2em;
+	}
+	.nom{
+		font-size: 2em;
+	}
+
+	.parcours aside{
+		width : 20%;
+		
+	}
+	.parcours aside img{
+		max-width: 500px;
+	}
+	.parcours aside button{
+		font-size: 1.5em;
+		padding: 40px;
+		border-radius: 100px;
+
+	}
+	.parcours .icones{
+		max-width: 150px;
+	}
+
+
+	.projets .banniere img{
+		height: 300px;
+	}
+	
+	footer .logo img{
+		max-width: 300px;
+	}
+}
+
+
 .icone-tri {
 	font-size: 0.8em;
 	margin-left: 5px;
@@ -292,3 +326,5 @@ footer .contact .icones{
 th.active .icone-tri {
 	visibility: visible;
 }
+
+@media (max-width: 769px)

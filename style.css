@@ -17,8 +17,25 @@ header, footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 2% 2%;
+	/*margin: 2% 2%;*/
+	padding: 2% 2%;
+	border: 0;
 	align-items: center;
+	border-radius: 10px;
+}
+
+
+.menu a:hover{
+	background-color: #704796;
+	color: white;
+	transition: all 1s ease-out;
+}
+
+.parcours aside button:hover{
+	background-color: white;
+	border: 1px solid #704796;
+	color: #704796;
+	transition: all 1s ease-out;
 }
 
 footer a{

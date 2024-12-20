@@ -288,7 +288,9 @@ footer .contact .icones{
 	.nom{
 		font-size: 2em;
 	}
-
+	.projets article div{
+		width: 70%;
+	}
 	.parcours aside{
 		width : 20%;
 		
